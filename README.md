@@ -6,7 +6,7 @@ https://github.com/user-attachments/assets/7c8972f2-8ed2-4cd0-88ee-94a0132c39c3
 
 ![back](https://github.com/billyen33/SolarStippleLight/blob/main/img/back.jpg?raw=true)
 
-I built this as a present to my beautiful grandmother after a family roadtrip (hence the words/engravings are in Chinese), and you can do the same for yours with this guide!
+I built this as a present for my beautiful grandmother after a family roadtrip (hence the words/engravings are in Chinese), and you can do the same for yours with this guide!
 
 ## About
 [Stippling](https://www.artistsnetwork.com/art-mediums/drawing/get-started-with-stippling/) and [pointillism](https://www.britannica.com/art/pointillism) are both art forms that use dots to create images (black/white and color, respectively), and they can be thought of as the original electronic display. This project borrows from the idea of overlapping dots of different primary colors to create full spectrum of colors in the viewer's eyes. However, instead of using paint, we leverage red, green, and blue LEDs with carefully laser-engraved points on three acrylic sheets to generate full-color images. A fourth acrylic sheet with black paint in the engraved cavities is used to emphasize shadows when the display is unlit. See the image below for a zoomed-in version of the stipple display:
