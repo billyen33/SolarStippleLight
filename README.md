@@ -1,10 +1,12 @@
-# Solar-Powered Stipple Light Display
-This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
+# Solar-Powered Stipple Night Lamp
+The Solar-Powered Stipple Night Lamp is a self-powered stipple light display that wonderful commemorates a memory between you and your loved one while functioning without external power, and it's sure to be a head-turner in any room! This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
 ![collage](https://github.com/billyen33/SolarStippleLight/blob/main/img/collage.JPG?raw=true)
 
 https://github.com/user-attachments/assets/7c8972f2-8ed2-4cd0-88ee-94a0132c39c3
 
 ![back](https://github.com/billyen33/SolarStippleLight/blob/main/img/back.jpg?raw=true)
+
+I built this as a present to my beautiful grandmother after a family roadtrip, and you can do the same for yours with this guide!
 
 ## About
 [Stippling](https://www.artistsnetwork.com/art-mediums/drawing/get-started-with-stippling/) and [pointillism](https://www.britannica.com/art/pointillism) are both art forms that use dots to create images (black/white and color, respectively), and they can be thought of as the original electronic display. This project borrows from the idea of overlapping dots of different primary colors to create full spectrum of colors in the viewer's eyes. However, instead of using paint, we leverage red, green, and blue LEDs with carefully laser-engraved points on three acrylic sheets to generate full-color images. A fourth acrylic sheet with black paint in the engraved cavities is used to emphasize shadows when the display is unlit. See the image below for a zoomed-in version of the stipple display:
@@ -64,3 +66,19 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 - Electronics/Kapton tape (optional but recommended)
 
 _Recommended but not essential:_ flux and a microscope
+
+## Circuit Diagram
+
+WIP
+
+## CAD
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/87d82aa1-e939-448d-aed1-ec6c13aeaebe" alt="exploded" width="30%" class="center">
+</p>
+
+See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf).
+
+## Design and Construction
+
+See the [Solar Stipple Light Instructables page]() on how to build your own self-powered stipple night lamp!
