@@ -18,7 +18,7 @@ I built this as a present to my beautiful grandmother after a family roadtrip, a
 This project builds on the laser-engraved acrylic stipple sheet and LED method from the [Trichrome Stipple Light workshop](https://github.com/matth215/Trichrome-Stipple-Light) and adds the following functionalities:
 - Self-powered operation with solar cells, a LiPo battery, and a maximum power point tracking (MPPT) energy harvester
 - Lower cost and power consumption with a fully analog circuit (no MCU)
-- Autonmatically turns on in the dark and off when it's bright out to save energy
+- Automatically turns on in the dark and off when it's bright out to save energy
 - Knobs to set RGB LED brightness and threshold light level to turn on
 - Integrated battery voltage monitor to help users visualize how much juice is left
 - Turbo charging port on the back in case solar isn't enough to charge it
