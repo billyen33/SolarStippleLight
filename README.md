@@ -18,7 +18,7 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 - Lower cost and power consumption with a fully analog circuit (no MCU)
 - Autonmatically turns on in the dark and off when it's bright out to save energy
 - Knobs to set RGB LED brightness and threshold light level to turn on
-- Integrated battery voltage monitor to help user visualize how much juice is left
+- Integrated battery voltage monitor to help users visualize how much juice is left
 - Turbo charging port on the back in case solar isn't enough to charge it
 
 ## Bill of Materials
@@ -28,7 +28,8 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | M2.5 x 4 mm screws | Fastener for the voltmeter display | 2 | [Amazon](https://www.amazon.com/Kozelo-560pcs-Socket-Screws-Assortment/dp/B0DKBYP2GR/ref=sr_1_2_sspa?sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | Heat-set threaded insert kit | For securing the M3 and M2.5 screws on the box, need **six** M3 inserts and **two** M2.5 inserts | 1 | [Amazon](https://www.amazon.com/Ktehloy-Threaded-Assortment-Printing-Components/dp/B0CLKDPN65/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | Bayite digital mini voltmeter + display | Measures and displays battery voltage | 1 | [Amazon](https://www.amazon.com/dp/B00YALV0NG) |
-| HAWK'S WORK 300 mAh 3.7 V LiPo battery | Battery for the device | 1 | [Amazon](https://www.amazon.com/dp/B09R7F1VV5) |
+| HAWK'S WORK 300 mAh 3.7 V LiPo battery and charger | Battery for the device | 1 | [Amazon](https://www.amazon.com/dp/B09R7F1VV5) |
+| USB-C cable and outlet adapter | For the turbo charging port | 1 | [Amazon](https://www.amazon.com/Phone-Charger-Charging-20W-Block-Type-C/dp/B0CKZ7L8J4/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | BQ25570 breakout board | Solar energy harvesting circuit with built-in buck regulator | 1 | [Amazon](https://www.amazon.com/dp/B0BBLV85L8) |
 | MDee 5 V red LED strip | Red LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991NNP2) |
 | MDee 5 V green LED strip | Green LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991MNTP) |
