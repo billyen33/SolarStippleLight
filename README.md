@@ -112,7 +112,3 @@ If the night lamp is placed in an unfortunate location where it's always in the 
 </p>
 
 See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf). I recommend printing the main enclosure box facing down with tree supports (enabled on build plate only) and 0.1 mm nozzle size, and the others can be done without support.
-
-## Assembly Guide
-
-Left as an exercise for the reader ;) ~~Jk eventually this will exist~~
