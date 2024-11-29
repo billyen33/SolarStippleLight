@@ -70,7 +70,7 @@ _Recommended but not essential:_ flux and a microscope
 
 ## Circuit Diagram
 
-WIP
+![circuit diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/circuit.png?raw=true)
 
 ## CAD
 
