@@ -62,4 +62,5 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 - Soldering iron and solder
 - M2.5 and M3 screwdrivers (or equivalent if using a different fastener from the one above)
 - Electronics/Kapton tape (optional but recommended)
-- Recommended but not essential: flux and a microscope
+
+_Recommended but not essential:_ flux and a microscope
