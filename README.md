@@ -23,6 +23,10 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 - Integrated battery voltage monitor to help users visualize how much juice is left
 - Turbo charging port on the back in case solar isn't enough to charge it
 
+## How Do I Generate These Cool Stipple Engravings?
+
+[@matth215](https://github.com/matth215) figured it out. See his [TSL_Preprocessing_Guide](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf) followed by [Section 4 of the TSL_Assembly_Guide](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Assembly_Guide%20(1).pdf). Just make your acrylic sheets 4" x 4" x 1/8" if you want to use the CAD files below.
+
 ## Bill of Materials
 | Name | Description | Amount | Vendor |
 | :---: | :---: | :---: | :---: |
@@ -33,6 +37,7 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | Bayite digital mini voltmeter + display | Measures and displays battery voltage | 1 | [Amazon](https://www.amazon.com/dp/B00YALV0NG) |
 | HAWK'S WORK 300 mAh 3.7 V LiPo battery and charger | Battery for the device | 1 | [Amazon](https://www.amazon.com/dp/B09R7F1VV5) |
 | USB-C cable and outlet adapter | For the turbo charging port | 1 | [Amazon](https://www.amazon.com/Phone-Charger-Charging-20W-Block-Type-C/dp/B0CKZ7L8J4/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
+| Large heat shrink tubing | For the turbo charger cable | 1 | [Amazon](https://www.amazon.com/Ginsco-580-pcs-Assorted-Sleeving/dp/B01MFA3OFA/ref=sr_1_3?sr=8-3) |
 | BQ25570 breakout board | Solar energy harvesting circuit with built-in buck regulator | 1 | [Amazon](https://www.amazon.com/dp/B0BBLV85L8) |
 | MDee 5 V red LED strip | Red LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991NNP2) |
 | MDee 5 V green LED strip | Green LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991MNTP) |
@@ -55,6 +60,8 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | 36 AWG enameled wire | Use for generic jumper connections on FR4 board | 1 | [Amazon](https://www.amazon.com/BNTECHGO-AWG-Magnet-Wire-Transformers/dp/B07K4415HM/ref=sr_1_4?s=industrial&sr=1-4) |
 | 24 AWG stranded wire | Use for high-current jumper traces | 1 | [Amazon](https://www.amazon.com/Fermerry-Stranded-Electrical-Silicone-Cables/dp/B089CRSLG8/ref=sr_1_4?s=industrial&sr=1-4) |
 
+Most of these will be available in typical prototyping/electronics workspaces, so take a look and see what you are missing before you place an order!
+
 ### Tools Needed:
 - Hot glue and super glue
 - 3D printer (alongside different color PLA plastics and TPU for the legs)
@@ -68,7 +75,7 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 
 _Recommended but not essential:_ flux and a microscope
 
-## Circuit
+## Electronics
 
 ### Circuit Diagram
 
@@ -78,6 +85,12 @@ _Recommended but not essential:_ flux and a microscope
 
 ![wiring diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/wiring_diagram.jpg?raw=true)
 
+### IRL
+
+![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
+
+A lot of people ask why I used copper tape, FR4, and tiny 36 gauge enameled wire to build the circuit with tiny surface mounted parts instead of using large through-hole components or a PCB. It's to show that I care (definitely not because I'm a SMD elitist or I'm too cheap to pay the $20 JLCPCB shipping fee). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness.
+
 ### BQ25570
 
 The [BQ25570](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25570) is an energy harvester with MPPT and an integrated buck regulator that gives us an adjustable output voltage. To set the output voltage and the minimum/maximum voltage thresholds for our specific battery, we need to swap the 7 SMD resistors on the board. See the image below for where the resistors are (Rov1, Rov2, Rok1, Rok2, Rok3, Rout1, Rout2):
@@ -86,13 +99,13 @@ The [BQ25570](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref
 
 See the [calculations](https://github.com/billyen33/SolarStippleLight/blob/main/Calculations.xlsx) spreadsheet for how to determine the resistor values, and you can use the values I did as-is for the board to work (though manual tuning may be required to get more exact voltages). You can refer to the [datasheet for the BQ25570 chip](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25570) for more detail.
 
-### IRL
+### Turbo Charger
 
-![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
+If the night lamp is placed in an unfortunate location where it's always in the dark or you want to charge it in a hurry, a USB-C charging port is made available on the back of the device. The charger is the same one that came with the battery from the Amazon link above, but the small 2-pin connector was cut off and replaced with the USB-C cable from the Bill of Materials to create a more user-friendly connector interface. I pried open the USB-A connector box to access the wires and desoldered the original cable before stripping and soldering on the new USB-C one, and covered the circuit with a large heatshrink (ideally use something transluscent so you can see the internal LED) alongside plenty of hot glue to seal everything up. The internal LED light will shine when the battery is charging (see bottom right) and turn off when the battery is full (nominally 4.2 V). If the night lamp is near an outlet it can be permanently plugged in, and the solar cell will just function as a photodiode for light sensing in this case. It should only take a couple hours to fully charge the 300 mAh battery using the charger.
 
-A lot of people ask why I used copper tape, FR4, and tiny 36 gauge enameled wire to build the circuit with tiny surface mounted parts instead of using large through-hole components or a PCB. It's to show that I care (definitely not because I'm a SMD elitist or I'm too cheap to pay the $20 JLCPCB shipping fee). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness.
+![charger](https://github.com/billyen33/SolarStippleLight/blob/main/img/charger.JPG?raw=true)
 
-## CAD
+## Mechanical CAD
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/87d82aa1-e939-448d-aed1-ec6c13aeaebe" alt="exploded" width="30%" class="center">
