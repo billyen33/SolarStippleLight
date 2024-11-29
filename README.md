@@ -68,9 +68,21 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 
 _Recommended but not essential:_ flux and a microscope
 
-## Circuit Diagram
+## Circuit
+
+### Circuit Diagram
 
 ![circuit diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/circuit.png?raw=true)
+
+### Wiring Diagram
+
+![wiring diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/wiring_diagram.jpg?raw=true)
+
+### IRL
+
+![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
+
+A lot of people ask why I used copper tape, FR4, and tiny 36 gauge enameled wire to build the circuit with tiny SMD parts instead of using large through-hole components or a PCB. It's to show that I care (not because I like to suffer or I'm too cheap to pay the $20 JLCPCB shipping fee). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness.
 
 ## CAD
 
