@@ -6,10 +6,10 @@ https://github.com/user-attachments/assets/7c8972f2-8ed2-4cd0-88ee-94a0132c39c3
 
 ![back](https://github.com/billyen33/SolarStippleLight/blob/main/img/back.jpg?raw=true)
 
-I built this as a present to my beautiful grandmother after a family roadtrip, and you can do the same for yours with this guide!
+I built this as a present for my beautiful grandmother after a family roadtrip (hence the words/engravings are in Chinese), and you can do the same for yours with this guide!
 
 ## About
-[Stippling](https://www.artistsnetwork.com/art-mediums/drawing/get-started-with-stippling/) and [pointillism](https://www.britannica.com/art/pointillism) are both art forms that use dots to create images (black/white and color, respectively), and they can be thought of as the original electronic display. This project borrows from the idea of overlapping dots of different primary colors to create full spectrum of colors in the viewer's eyes. However, instead of using paint, we leverage red, green, and blue LEDs with carefully laser-engraved points on three acrylic sheets to generate full-color images. A fourth acrylic sheet with black paint in the engraved cavities is used to emphasize shadows when the display is unlit. See the image below for a zoomed-in version of the stipple display:
+[Stippling](https://www.artistsnetwork.com/art-mediums/drawing/get-started-with-stippling/) and [pointillism](https://www.britannica.com/art/pointillism) are both art forms that use dots to create images (black/white and color, respectively), and they can be thought of as the original electronic display. This project takes inspiration from the concept of overlapping dots in primary colors to create a full spectrum of colors perceived by the viewer. Instead of paint, we use red, green, and blue LEDs, paired with precisely laser-engraved points on three acrylic sheets, to produce full-color images. A fourth acrylic sheet, coated with black paint in its engraved cavities, enhances shadow details when the display is unlit. The image below shows a close-up of the stipple display for reference:
 
 <p align="center">
 <img src="https://github.com/billyen33/SolarStippleLight/blob/main/img/zoom.jpg?raw=true" alt="zoomed" width="30%" class="center">
@@ -56,7 +56,7 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | 24 AWG stranded wire | Use for high-current jumper traces | 1 | [Amazon](https://www.amazon.com/Fermerry-Stranded-Electrical-Silicone-Cables/dp/B089CRSLG8/ref=sr_1_4?s=industrial&sr=1-4) |
 
 ### Tools Needed:
-- Hot glue
+- Hot glue and super glue
 - 3D printer (alongside different color PLA plastics and TPU for the legs)
 - Laser cutter
 - Wire stripper/cutter
@@ -78,11 +78,19 @@ _Recommended but not essential:_ flux and a microscope
 
 ![wiring diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/wiring_diagram.jpg?raw=true)
 
+### BQ25570
+
+The [BQ25570](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25570) is an energy harvester with MPPT and an integrated buck regulator that gives us an adjustable output voltage. To set the output voltage and the minimum/maximum voltage thresholds for our specific battery, we need to swap the 7 SMD resistors on the board. See the image below for where the resistors are (Rov1, Rov2, Rok1, Rok2, Rok3, Rout1, Rout2):
+
+![bq25570](https://github.com/billyen33/SolarStippleLight/blob/main/img/BQ25570.jpg?raw=true)
+
+See the [calculations](https://github.com/billyen33/SolarStippleLight/blob/main/Calculations.xlsx) spreadsheet for how to determine the resistor values, and you can use the values I did as-is for the board to work (though manual tuning may be required to get more exact voltages). You can refer to the [datasheet for the BQ25570 chip](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25570) for more detail.
+
 ### IRL
 
 ![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
 
-A lot of people ask why I used copper tape, FR4, and tiny 36 gauge enameled wire to build the circuit with tiny SMD parts instead of using large through-hole components or a PCB. It's to show that I care (not because I like to suffer or I'm too cheap to pay the $20 JLCPCB shipping fee). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness.
+A lot of people ask why I used copper tape, FR4, and tiny 36 gauge enameled wire to build the circuit with tiny surface mounted parts instead of using large through-hole components or a PCB. It's to show that I care (definitely not because I'm a SMD elitist or I'm too cheap to pay the $20 JLCPCB shipping fee). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness.
 
 ## CAD
 
@@ -92,6 +100,6 @@ A lot of people ask why I used copper tape, FR4, and tiny 36 gauge enameled wire
 
 See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf).
 
-## Design and Construction
+## Assembly Guide
 
-See the [Solar Stipple Light Instructables page]() on how to build your own self-powered stipple night lamp!
+Left as an exercise for the reader ;) ~~Jk eventually this will exist~~
