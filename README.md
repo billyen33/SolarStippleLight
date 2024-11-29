@@ -1,4 +1,4 @@
-# Solar-Powered Stipple Night Lamp
+# 	:crescent_moon: Solar-Powered Stipple Night Lamp 	:crescent_moon:
 The Solar-Powered Stipple Night Lamp is a self-powered stipple light display that wonderful commemorates a memory between you and your loved one while functioning without external power, and it's sure to be a head-turner in any room! This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
 ![collage](https://github.com/billyen33/SolarStippleLight/blob/main/img/collage.JPG?raw=true)
 
@@ -26,6 +26,7 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 ## Bill of Materials
 | Name | Description | Amount | Vendor |
 | :---: | :---: | :---: | :---: |
+| 60 x 60 mm 3 V solar panel | Solar panel for energy harvesting and light sensing | 1 | [xUmp](https://www.xump.com/science/hobby-solar-cell-3v-150mm-60x60mm.cfm?gad_source=1) |
 | M3 x 6 mm screws | Fasteners for the lid and main circuit board | 6 | [Amazon](https://www.amazon.com/Kozelo-600pcs-Socket-Screws-Assortment/dp/B0DJ3L9RNK/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | M2.5 x 4 mm screws | Fastener for the voltmeter display | 2 | [Amazon](https://www.amazon.com/Kozelo-560pcs-Socket-Screws-Assortment/dp/B0DKBYP2GR/ref=sr_1_2_sspa?sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | Heat-set threaded insert kit | For securing the M3 and M2.5 screws on the box, need **six** M3 inserts and **two** M2.5 inserts | 1 | [Amazon](https://www.amazon.com/Ktehloy-Threaded-Assortment-Printing-Components/dp/B0CLKDPN65/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
