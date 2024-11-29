@@ -68,9 +68,20 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 
 _Recommended but not essential:_ flux and a microscope
 
-## Circuit Diagram
+## Circuit
+
+### Circuit Diagram
 
 ![circuit diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/circuit.png?raw=true)
+
+### Wiring Diagram
+
+![wiring diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/wiring_diagram.jpg?raw=true)
+
+### IRL
+
+![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
+
 
 ## CAD
 
