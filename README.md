@@ -1,5 +1,5 @@
 # 	:crescent_moon: Solar-Powered Stipple Night Lamp 	:crescent_moon:
-The Solar-Powered Stipple Night Lamp is a self-powered stipple light display that wonderful commemorates a memory between you and your loved one while functioning without external power, and it's sure to be a head-turner in any room! This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
+The Solar-Powered Stipple Night Lamp is a self-powered stipple light display that wonderfully commemorates a memory between you and your loved ones while functioning without external power, and it's sure to be a head-turner in any room! This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
 ![collage](https://github.com/billyen33/SolarStippleLight/blob/main/img/collage.JPG?raw=true)
 
 https://github.com/user-attachments/assets/7c8972f2-8ed2-4cd0-88ee-94a0132c39c3
