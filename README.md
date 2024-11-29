@@ -1,10 +1,12 @@
-# Solar-Powered Stipple Light Display
-This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
+# 	:crescent_moon: Solar-Powered Stipple Night Lamp 	:crescent_moon:
+The Solar-Powered Stipple Night Lamp is a self-powered stipple light display that wonderful commemorates a memory between you and your loved one while functioning without external power, and it's sure to be a head-turner in any room! This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
 ![collage](https://github.com/billyen33/SolarStippleLight/blob/main/img/collage.JPG?raw=true)
 
 https://github.com/user-attachments/assets/7c8972f2-8ed2-4cd0-88ee-94a0132c39c3
 
 ![back](https://github.com/billyen33/SolarStippleLight/blob/main/img/back.jpg?raw=true)
+
+I built this as a present to my beautiful grandmother after a family roadtrip, and you can do the same for yours with this guide!
 
 ## About
 [Stippling](https://www.artistsnetwork.com/art-mediums/drawing/get-started-with-stippling/) and [pointillism](https://www.britannica.com/art/pointillism) are both art forms that use dots to create images (black/white and color, respectively), and they can be thought of as the original electronic display. This project borrows from the idea of overlapping dots of different primary colors to create full spectrum of colors in the viewer's eyes. However, instead of using paint, we leverage red, green, and blue LEDs with carefully laser-engraved points on three acrylic sheets to generate full-color images. A fourth acrylic sheet with black paint in the engraved cavities is used to emphasize shadows when the display is unlit. See the image below for a zoomed-in version of the stipple display:
@@ -16,19 +18,21 @@ https://github.com/user-attachments/assets/7c8972f2-8ed2-4cd0-88ee-94a0132c39c3
 This project builds on the laser-engraved acrylic stipple sheet and LED method from the [Trichrome Stipple Light workshop](https://github.com/matth215/Trichrome-Stipple-Light) and adds the following functionalities:
 - Self-powered operation with solar cells, a LiPo battery, and a maximum power point tracking (MPPT) energy harvester
 - Lower cost and power consumption with a fully analog circuit (no MCU)
-- Autonmatically turns on in the dark and off when it's bright out to save energy
+- Automatically turns on in the dark and off when it's bright out to save energy
 - Knobs to set RGB LED brightness and threshold light level to turn on
-- Integrated battery voltage monitor to help user visualize how much juice is left
+- Integrated battery voltage monitor to help users visualize how much juice is left
 - Turbo charging port on the back in case solar isn't enough to charge it
 
 ## Bill of Materials
 | Name | Description | Amount | Vendor |
 | :---: | :---: | :---: | :---: |
+| 60 x 60 mm 3 V solar panel | Solar panel for energy harvesting and light sensing | 1 | [xUmp](https://www.xump.com/science/hobby-solar-cell-3v-150mm-60x60mm.cfm?gad_source=1) |
 | M3 x 6 mm screws | Fasteners for the lid and main circuit board | 6 | [Amazon](https://www.amazon.com/Kozelo-600pcs-Socket-Screws-Assortment/dp/B0DJ3L9RNK/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | M2.5 x 4 mm screws | Fastener for the voltmeter display | 2 | [Amazon](https://www.amazon.com/Kozelo-560pcs-Socket-Screws-Assortment/dp/B0DKBYP2GR/ref=sr_1_2_sspa?sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | Heat-set threaded insert kit | For securing the M3 and M2.5 screws on the box, need **six** M3 inserts and **two** M2.5 inserts | 1 | [Amazon](https://www.amazon.com/Ktehloy-Threaded-Assortment-Printing-Components/dp/B0CLKDPN65/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | Bayite digital mini voltmeter + display | Measures and displays battery voltage | 1 | [Amazon](https://www.amazon.com/dp/B00YALV0NG) |
-| HAWK'S WORK 300 mAh 3.7 V LiPo battery | Battery for the device | 1 | [Amazon](https://www.amazon.com/dp/B09R7F1VV5) |
+| HAWK'S WORK 300 mAh 3.7 V LiPo battery and charger | Battery for the device | 1 | [Amazon](https://www.amazon.com/dp/B09R7F1VV5) |
+| USB-C cable and outlet adapter | For the turbo charging port | 1 | [Amazon](https://www.amazon.com/Phone-Charger-Charging-20W-Block-Type-C/dp/B0CKZ7L8J4/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | BQ25570 breakout board | Solar energy harvesting circuit with built-in buck regulator | 1 | [Amazon](https://www.amazon.com/dp/B0BBLV85L8) |
 | MDee 5 V red LED strip | Red LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991NNP2) |
 | MDee 5 V green LED strip | Green LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991MNTP) |
@@ -61,4 +65,21 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 - Soldering iron and solder
 - M2.5 and M3 screwdrivers (or equivalent if using a different fastener from the one above)
 - Electronics/Kapton tape (optional but recommended)
-- Recommended but not essential: flux and a microscope
+
+_Recommended but not essential:_ flux and a microscope
+
+## Circuit Diagram
+
+WIP
+
+## CAD
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/87d82aa1-e939-448d-aed1-ec6c13aeaebe" alt="exploded" width="30%" class="center">
+</p>
+
+See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf).
+
+## Design and Construction
+
+See the [Solar Stipple Light Instructables page]() on how to build your own self-powered stipple night lamp!
