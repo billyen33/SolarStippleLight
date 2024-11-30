@@ -70,7 +70,7 @@ Most of these will be available in typical prototyping/electronics workspaces, s
 - Sharp X-Acto blades to cut copper tape
 - Tweezers
 - Soldering iron and solder
-- M2.5 and M3 screwdrivers (or equivalent if using a different fastener from the one above)
+- M2.5 and M3 screwdrivers (or equivalent if using different fasteners from the one above)
 - Electronics/Kapton tape (optional but recommended)
 
 _Recommended but not essential:_ flux and a microscope
