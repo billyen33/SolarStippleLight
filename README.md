@@ -1,5 +1,5 @@
 # 	:crescent_moon: Solar-Powered Stipple Night Lamp 	:crescent_moon:
-The Solar-Powered Stipple Night Lamp is a self-powered stipple light display that wonderful commemorates a memory between you and your loved one while functioning without external power, and it's sure to be a head-turner in any room! This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
+The Solar-Powered Stipple Night Lamp is a self-powered stipple light display that wonderfully commemorates a memory between you and your loved ones while functioning without external power, and it's sure to be a head-turner in any room! This project was inspired by the venerable [@matth215](https://github.com/matth215)'s [Trichrome Stipple Light project](https://github.com/matth215/Trichrome-Stipple-Light), which was developed as a Stanford [lab64](https://lab64.stanford.edu/home) workshop.
 ![collage](https://github.com/billyen33/SolarStippleLight/blob/main/img/collage.JPG?raw=true)
 
 https://github.com/user-attachments/assets/7c8972f2-8ed2-4cd0-88ee-94a0132c39c3
@@ -23,6 +23,10 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 - Integrated battery voltage monitor to help users visualize how much juice is left
 - Turbo charging port on the back in case solar isn't enough to charge it
 
+## How Do I Generate These Cool Stipple Engravings?
+
+[@matth215](https://github.com/matth215) figured it out. See his [TSL_Preprocessing_Guide](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf) followed by [Section 4 of the TSL_Assembly_Guide](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Assembly_Guide%20(1).pdf). Just make your acrylic sheets 4" x 4" x 1/8" if you want to use the CAD files below.
+
 ## Bill of Materials
 | Name | Description | Amount | Vendor |
 | :---: | :---: | :---: | :---: |
@@ -33,6 +37,7 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | Bayite digital mini voltmeter + display | Measures and displays battery voltage | 1 | [Amazon](https://www.amazon.com/dp/B00YALV0NG) |
 | HAWK'S WORK 300 mAh 3.7 V LiPo battery and charger | Battery for the device | 1 | [Amazon](https://www.amazon.com/dp/B09R7F1VV5) |
 | USB-C cable and outlet adapter | For the turbo charging port | 1 | [Amazon](https://www.amazon.com/Phone-Charger-Charging-20W-Block-Type-C/dp/B0CKZ7L8J4/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
+| Large heat shrink tubing | For the turbo charger cable | 1 | [Amazon](https://www.amazon.com/Ginsco-580-pcs-Assorted-Sleeving/dp/B01MFA3OFA/ref=sr_1_3?sr=8-3) |
 | BQ25570 breakout board | Solar energy harvesting circuit with built-in buck regulator | 1 | [Amazon](https://www.amazon.com/dp/B0BBLV85L8) |
 | MDee 5 V red LED strip | Red LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991NNP2) |
 | MDee 5 V green LED strip | Green LED light | 1 | [Amazon](https://www.amazon.com/dp/B0C991MNTP) |
@@ -52,23 +57,25 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | Velcro strip with adhesive backing | Connects the LED light panel to main box | 1 | [Amazon](https://www.amazon.com/Art3d-Sticky-Double-Sided-Command-Adhesive/dp/B0B58FGF8H/ref=sr_1_4?s=industrial&sr=1-4) |
 | Single-sided FR4 board | Substrate material for DIY PCB | 1 | [Amazon](https://www.amazon.com/uxcell-100x70mm-Double-Sided-Thickness-Prototyping/dp/B07R585RVN/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | Thin copper tape | Use with non-copper side of FR4 board to make traces | 1 | [Amazon](https://www.amazon.com/PATIKIL-Conductive-Shielding-Electronics-Grounding/dp/B0BZ51LC5Z/ref=sr_1_3?s=industrial&sr=1-3) |
-| 36 AWG enameled wire | Use for generic jumper connections on FR4 board | 1 | [Amazon](https://www.amazon.com/BNTECHGO-AWG-Magnet-Wire-Transformers/dp/B07K4415HM/ref=sr_1_4?s=industrial&sr=1-4) |
-| 24 AWG stranded wire | Use for high-current jumper traces | 1 | [Amazon](https://www.amazon.com/Fermerry-Stranded-Electrical-Silicone-Cables/dp/B089CRSLG8/ref=sr_1_4?s=industrial&sr=1-4) |
+| 36 AWG enameled wire | Use for generic jumper connections on FR4 board, **much** easier to solder than standard 24 AWG wires since the insulation can be melted off instead of stripped | 1 | [Amazon](https://www.amazon.com/BNTECHGO-AWG-Magnet-Wire-Transformers/dp/B07K4415HM/ref=sr_1_4?s=industrial&sr=1-4) |
+| 24 AWG stranded wire | Use for high-current jumper traces the 36 AWG wires can't take | 1 | [Amazon](https://www.amazon.com/Fermerry-Stranded-Electrical-Silicone-Cables/dp/B089CRSLG8/ref=sr_1_4?s=industrial&sr=1-4) |
+
+Most of these will be available in typical prototyping/electronics workspaces, so take a look and see what you are missing before you place an order!
 
 ### Tools Needed:
 - Hot glue and super glue
-- 3D printer (alongside different color PLA plastics and TPU for the legs)
+- FDM 3D printer (alongside different color PLA plastics and TPU for the legs)
 - Laser cutter
 - Wire stripper/cutter
 - Sharp X-Acto blades to cut copper tape
 - Tweezers
 - Soldering iron and solder
-- M2.5 and M3 screwdrivers (or equivalent if using a different fastener from the one above)
+- M2.5 and M3 screwdrivers (or equivalent if using different fasteners from the one above)
 - Electronics/Kapton tape (optional but recommended)
 
 _Recommended but not essential:_ flux and a microscope
 
-## Circuit
+## Electronics
 
 ### Circuit Diagram
 
@@ -78,28 +85,38 @@ _Recommended but not essential:_ flux and a microscope
 
 ![wiring diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/wiring_diagram.jpg?raw=true)
 
+### IRL
+
+![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
+
+A lot of people ask why I used copper tape, FR4, and thin 36 gauge enameled wire to build the circuit with tiny surface mounted parts instead of using large through-hole components or a PCB. It's to show that I care (definitely not because I'm a SMD elitist or I'm too cheap to pay the $20 JLCPCB shipping fee). If you would like to learn this method, check out [this guide](https://halestrom.net/darksleep/blog/039_coppertape/) and [this video](https://www.youtube.com/watch?v=xTkDDCnEdA4). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness. I would recommend cutting out the FR4 board and drilling its mounting holes according to the dimension of the main enclosure box (make sure to include enough room on the sides for the connectors) before soldering on components. I also found it useful to drill an extra hole near the BAT- and BAT+ pins to be able to tape the LiPo battery on the back of the board (see the IRL image above).
+
 ### BQ25570
 
 The [BQ25570](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25570) is an energy harvester with MPPT and an integrated buck regulator that gives us an adjustable output voltage. To set the output voltage and the minimum/maximum voltage thresholds for our specific battery, we need to swap the 7 SMD resistors on the board. See the image below for where the resistors are (Rov1, Rov2, Rok1, Rok2, Rok3, Rout1, Rout2):
 
 ![bq25570](https://github.com/billyen33/SolarStippleLight/blob/main/img/BQ25570.jpg?raw=true)
 
-See the [calculations](https://github.com/billyen33/SolarStippleLight/blob/main/Calculations.xlsx) spreadsheet for how to determine the resistor values, and you can use the values I did as-is for the board to work (though manual tuning may be required to get more exact voltages). You can refer to the [datasheet for the BQ25570 chip](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25570) for more detail.
+See the [calculations](https://github.com/billyen33/SolarStippleLight/blob/main/Calculations.xlsx) spreadsheet for how to determine the resistor values, and you can use the values I did as-is for the board to work (though manual tuning may be required to get more exact voltages). You can refer to the [datasheet for the BQ25570 chip](https://www.ti.com/lit/ds/symlink/bq25570.pdf?ts=1732850844213&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ25570) for more detail. If the battery is disconnected from the main circuit board for too long, it is possible for VSTOR to drop below the coldstart voltage and stay there even after the battery is reconnected, making the device take a long time to restarting operation. In that case, just ensure the battery is fully charged and press the jump start push button to quickly make VSTOR = BAT+, and the light should start functioning normally.
 
-### IRL
+### Turbo Charger
 
-![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
+If the night lamp is placed in an unfortunate location where it's always in the dark or you want to charge it in a hurry, a USB-C charging port is made available on the back of the device. The charger is the same one that came with the battery from the Amazon link above, but the small 2-pin connector was cut off and replaced with the USB-C cable from the Bill of Materials to create a more user-friendly connector interface. I pried open the USB-A connector box to access the wires and desoldered the original cable before stripping and soldering on the new USB-C one, and covered the circuit with a large heatshrink (ideally use something transluscent so you can see the internal LED) alongside plenty of hot glue to seal everything up. The internal LED light will shine when the battery is charging (see bottom right) and turn off when the battery is full (nominally 4.2 V). If the night lamp is near an outlet it can be permanently plugged in, and the solar cell will just function as a photodiode for light sensing in this case. It should only take a couple hours to fully charge the 300 mAh battery using the charger.
 
-A lot of people ask why I used copper tape, FR4, and tiny 36 gauge enameled wire to build the circuit with tiny surface mounted parts instead of using large through-hole components or a PCB. It's to show that I care (definitely not because I'm a SMD elitist or I'm too cheap to pay the $20 JLCPCB shipping fee). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness.
+![charger](https://github.com/billyen33/SolarStippleLight/blob/main/img/charger.JPG?raw=true)
 
-## CAD
+## Mechanical
+
+### 3D Printing + Laser Cutting Files
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/87d82aa1-e939-448d-aed1-ec6c13aeaebe" alt="exploded" width="30%" class="center">
 </p>
 
-See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf).
+See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf). I recommend printing the main enclosure box facing down with tree supports (enabled on build plate only) and 0.1 mm nozzle size, and the others can be done without support. 
 
-## Assembly Guide
+### Details for Assembly
 
-Left as an exercise for the reader ;) ~~Jk eventually this will exist~~
+The voltmeter's ON button (see Wiring Diagram) is super glued to the inside of the lid, and the button extension (in [CAD/3DPrint/PLA](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/PLA)) is glued to top of the standard push button to make it pressable across the thick acrylic sheet (otherwise a pin or a pencil will be necessary to push it). The LED strips are stuck to the LED mount using the adhesive tape they come with, and the mounting piece adheres to the main box with Velcro strips so it can be removed later if necessary (can replace Velcro with hot glue if you don't want to make it removable). All of the holes on the main enclosure box uses M3 threaded inserts, and the two holes on the LED mount for the voltmeter uses M2.5 inserts. Be careful with how much super glue you add to the button to avoid getting it stuck, and super glue can also be used to keep the other components (potentiometers, switches, etc.) secured if a press fit is not enough (the threshold knob especially would be useful to glue onto the 1Meg potentiometer to prevent it from falling out).
+
+Happy building :)
