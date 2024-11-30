@@ -107,7 +107,7 @@ If the night lamp is placed in an unfortunate location where it's always in the 
 
 ## Mechanical
 
-### CAD
+### 3D Printing + Laser Cutting Files
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/87d82aa1-e939-448d-aed1-ec6c13aeaebe" alt="exploded" width="30%" class="center">
