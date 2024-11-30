@@ -89,7 +89,7 @@ _Recommended but not essential:_ flux and a microscope
 
 ![IRL circuit](https://github.com/billyen33/SolarStippleLight/blob/main/img/inside_battery.jpg?raw=true)
 
-A lot of people ask why I used copper tape, FR4, and thin 36 gauge enameled wire to build the circuit with tiny surface mounted parts instead of using large through-hole components or a PCB. It's to show that I care (definitely not because I'm a SMD elitist or I'm too cheap to pay the $20 JLCPCB shipping fee). If you would like to learn this method, check out [this guide](https://halestrom.net/darksleep/blog/039_coppertape/) and [this video](https://www.youtube.com/watch?v=xTkDDCnEdA4). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness.
+A lot of people ask why I used copper tape, FR4, and thin 36 gauge enameled wire to build the circuit with tiny surface mounted parts instead of using large through-hole components or a PCB. It's to show that I care (definitely not because I'm a SMD elitist or I'm too cheap to pay the $20 JLCPCB shipping fee). If you would like to learn this method, check out [this guide](https://halestrom.net/darksleep/blog/039_coppertape/) and [this video](https://www.youtube.com/watch?v=xTkDDCnEdA4). The wiring you see above is likely not optimal, but it works. Feel free to explore any method you choose as long as you stick to the circuit diagram above, the circuit's not too sensitive to parasitics since everything is in DC. If you do use tiny 36 gauge wires like I did, I'd avoid using them where the main LED drive current goes through as they are only rated up to [35 mA for power transmission](https://www.powerstream.com/Wire_Size.htm) and we can get >100 mA when all the LEDs are on maximum brightness. I would recommend cutting out the FR4 board and drilling its mounting holes according to the dimension of the main enclosure box (make sure to include enough room on the sides for the connectors) before soldering on components.
 
 ### BQ25570
 
@@ -105,10 +105,18 @@ If the night lamp is placed in an unfortunate location where it's always in the 
 
 ![charger](https://github.com/billyen33/SolarStippleLight/blob/main/img/charger.JPG?raw=true)
 
-## Mechanical CAD
+## Mechanical
+
+### CAD
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/87d82aa1-e939-448d-aed1-ec6c13aeaebe" alt="exploded" width="30%" class="center">
 </p>
 
-See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf). I recommend printing the main enclosure box facing down with tree supports (enabled on build plate only) and 0.1 mm nozzle size, and the others can be done without support.
+See the [CAD](https://github.com/billyen33/SolarStippleLight/tree/main/CAD) folder for the stl files needed for 3D printing (most parts are in PLA except for the [legs](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/TPU), which are in TPU but can technically be done in PLA as well). The laser cut files' footprints (lines that need to be cut through) are in the [LaserCut](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/LaserCut) folder, and the engravings can be added separately on InkScape after they are generated via [@matt215's instructions](https://github.com/matth215/Trichrome-Stipple-Light/blob/main/TSL_Preprocessing_Guide.pdf). I recommend printing the main enclosure box facing down with tree supports (enabled on build plate only) and 0.1 mm nozzle size, and the others can be done without support. 
+
+### Details for Assembly
+
+The voltmeter's ON button (see Wiring Diagram) is super glued to the inside of the lid, and the button extension (in [CAD/3DPrint/PLA](https://github.com/billyen33/SolarStippleLight/tree/main/CAD/3DPrint/PLA)) is glued to top of the standard push button to make it pressable across the thick acrylic sheet (otherwise a pin or a pencil will be necessary to push it). The LED strips are stuck to the LED mount using the adhesive tape they come with, and the mounting piece adheres to the main box with Velcro strips so it can be removed later if necessary (can replace Velcro with hot glue if you don't want to make it removable). All of the holes on the main enclosure box uses M3 threaded inserts, and the two holes on the LED mount for the voltmeter uses M2.5 inserts. Be careful with how much super glue you add to the button to avoid getting it stuck, and super glue can also be used to keep the other components (potentiometers, switches, etc.) secured if a press fit is not enough (the threshold knob especially would be useful to glue onto the 1Meg potentiometer to prevent it from falling out).
+
+Happy building :)
