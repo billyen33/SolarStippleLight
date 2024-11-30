@@ -57,8 +57,8 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | Velcro strip with adhesive backing | Connects the LED light panel to main box | 1 | [Amazon](https://www.amazon.com/Art3d-Sticky-Double-Sided-Command-Adhesive/dp/B0B58FGF8H/ref=sr_1_4?s=industrial&sr=1-4) |
 | Single-sided FR4 board | Substrate material for DIY PCB | 1 | [Amazon](https://www.amazon.com/uxcell-100x70mm-Double-Sided-Thickness-Prototyping/dp/B07R585RVN/ref=sr_1_1_sspa?s=industrial&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
 | Thin copper tape | Use with non-copper side of FR4 board to make traces | 1 | [Amazon](https://www.amazon.com/PATIKIL-Conductive-Shielding-Electronics-Grounding/dp/B0BZ51LC5Z/ref=sr_1_3?s=industrial&sr=1-3) |
-| 36 AWG enameled wire | Use for generic jumper connections on FR4 board | 1 | [Amazon](https://www.amazon.com/BNTECHGO-AWG-Magnet-Wire-Transformers/dp/B07K4415HM/ref=sr_1_4?s=industrial&sr=1-4) |
-| 24 AWG stranded wire | Use for high-current jumper traces | 1 | [Amazon](https://www.amazon.com/Fermerry-Stranded-Electrical-Silicone-Cables/dp/B089CRSLG8/ref=sr_1_4?s=industrial&sr=1-4) |
+| 36 AWG enameled wire | Use for generic jumper connections on FR4 board, **much** easier to solder than standard 24 AWG wires since the insulation can be melted off instead of stripped | 1 | [Amazon](https://www.amazon.com/BNTECHGO-AWG-Magnet-Wire-Transformers/dp/B07K4415HM/ref=sr_1_4?s=industrial&sr=1-4) |
+| 24 AWG stranded wire | Use for high-current jumper traces the 36 AWG wires can't take | 1 | [Amazon](https://www.amazon.com/Fermerry-Stranded-Electrical-Silicone-Cables/dp/B089CRSLG8/ref=sr_1_4?s=industrial&sr=1-4) |
 
 Most of these will be available in typical prototyping/electronics workspaces, so take a look and see what you are missing before you place an order!
 
