@@ -45,7 +45,7 @@ This project builds on the laser-engraved acrylic stipple sheet and LED method f
 | USB-C port (chassis mount) | Connector for USB-C charging cable | 1 | [Amazon](https://www.amazon.com/dp/B0C7CPYL79) |
 | 1/8" Thick Acrylic Sheet | For lid and stipple light material | 1 | [Amazon](https://www.amazon.com/12-Clear-Acrylic-Sheet-Plexiglass/dp/B0899K949Z/ref=sr_1_1_sspa?crid=11Z2CKLK9HV9E&keywords=1%2F8%22+acrylic+sheet&qid=1660278591&sprefix=1%2F8+acrylic+sheet%2Caps%2C80&sr=8-1-spons&psc=1) |
 | Mini push buttons | For jumpstart button and view voltage button | 2 | [Amazon](https://www.amazon.com/DAOKI-Miniature-Momentary-Tactile-Quality/dp/B01CGMP9GY/ref=sr_1_5?sr=8-5) |
-| 6-pin slide switch | Power switch (Link TBD) | 1 | [Amazon](https://www.amazon.com/Micro-Traders-Electronics-8-5x9x3-3mm-Positions/dp/B0CNP77C43/ref=sr_1_10?s=industrial&sr=1-10) |
+| DPDT slide switch | Power switch (Link TBD) | 1 | [Amazon](https://www.amazon.com/Micro-Traders-Electronics-8-5x9x3-3mm-Positions/dp/B0CNP77C43/ref=sr_1_10?s=industrial&sr=1-10) |
 | 1Meg potentiometer | Knobs to set threshold lighting level | 1 | [Mouser](https://www.mouser.com/ProductDetail/Bourns/3362P-1-101LF?qs=me8TqzrmIYW7oAkP8ZuVYw%3D%3D&mgh=1&gad_source=1) |
 | 20k potentiometer | Knobs to adjust the RGB lighting levels | 3 | [DigiKey](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PT01-D120D-B203/15903925) |
 | TLV3691IDCKR | Ultra-low power comparator to set threshold lighting level for the device to turn on at | 1 | [DigiKey](https://www.digikey.com/en/products/detail/texas-instruments/TLV3691IDCKR/4555468) |
