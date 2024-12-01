@@ -94,7 +94,7 @@ The entire circuit with the exception of the BQ25570 energy harvestor is turned 
   - If V+ < IN+
     - STLQ020C33R (the 3.3 V LDO) is disabled, RGB LEDs are off
 
-The battery is always charging from the solar panel as long as there is sufficient ambient light, and the solar panel doubles as a light sensor to turn off the LEDs when it is bright out (IN+ rises above V+). The voltmeter only powers on/read voltage/displays voltage when the push button connecting it to GND is pressed to save power, as it pulls around 51 mW when BAT+ = 4.1 V.
+The battery is always charging from the solar panel as long as there is sufficient ambient light, and the solar panel doubles as a light sensor to turn off the LEDs when it is bright out (IN+ rises above V+). The voltmeter only powers on and reads/displays voltage when the push button closing its circuit is pressed to save power, as it pulls around 51 mW when BAT+ = 4.1 V.
 
 ### Wiring Diagram
 
