@@ -81,6 +81,21 @@ _Recommended but not essential:_ flux and a microscope
 
 ![circuit diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/circuit.png?raw=true)
 
+The entire circuit with the exception of the BQ25570 energy harvestor is turned off when the power DPDT switch is toggled to OFF, so nothing will happen but the battery will still be getting charged by the solar panel/charger. When the switch is toggled to AUTO, the circuit will operate according to the following logic:
+
+- BAT+ < VBAT_OK_PROG (set by Rok1 and Rok2 on BQ25570)
+  - V_OK and V_EN pulled to ground
+  - OUT+ is disabled and everything is off
+- BAT+ > VBAT_OK_HYST (set by Rok1, Rok2, and Rok3 on BQ25570)
+  - V_OK and V_EN pulled to VSTOR
+  - OUT+ is enabled (voltage set by Rout1 and Rout2 on BQ25570), TLV3691IDCKR and the 1Meg potentiometer are both on
+  - If V+ (output of the potentiometer swiper, set by user's threshold knob) > IN+ (output of the solar panel)
+    - STLQ020C33R (the 3.3 V LDO) is enabled, RGB LEDs turn on according to the currents set by their respective 20k potentiometers
+  - If V+ < IN+
+    - STLQ020C33R (the 3.3 V LDO) is disabled, RGB LEDs are off
+
+The battery is always charging from the solar panel as long as there is sufficient ambient light, and the solar panel doubles as a light sensor to turn off the LEDs when it is bright out (IN+ rises above V+). The voltmeter only powers on/read voltage/displays voltage when the push button connecting it to GND is pressed to save power, as it pulls around 51 mW when BAT+ = 4.1 V.
+
 ### Wiring Diagram
 
 ![wiring diagram](https://github.com/billyen33/SolarStippleLight/blob/main/img/wiring_diagram.jpg?raw=true)
